@@ -3,6 +3,8 @@
     font-family: Segoe UI;
     font-weight: lighter;
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 .Nbar
 {
@@ -21,9 +23,6 @@
     display: flex;
     overflow: hidden;
 }
-.container .info{
-    width: 50%;
-}
 .container h2,.symptoms h3{
     text-align: left;
     font-weight: 700;
@@ -33,54 +32,44 @@
     font-size: larger;
     font-weight: 400;
 }
-.container .logo{
-    width: 50%;
-}
 .container .logo img{
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
 }
 .symptoms
 {
-    overflow: hidden;
+    background-color: #dcdfe8;
 }
-.symptoms-logo
+.symptoms, .preventions
+{
+    padding: 30px;
+}
+.symptoms-logo, .preventions-logo
 {
     width: 100%;
-    height: 5vh;
+    height: 10vh;
     color: #333333;
     display: flex;
     justify-content: center;
     font-size: 25px;
 
 }
-.items
+.card
 {
-    height: 25vh;
-    display: flex;
-    justify-content: center;
-}
-.symp-card
-{
-    width: 17%;
-    justify-content: center;
-    margin-top: 35px;
-    padding:0px 30px;
+    border: 0px;
+    background-color: transparent;
     transition: background-color 1s;
 }
-.symp-card img
+.card:hover
 {
-    width: 50%;
-    transition: transform 1s;
+    background-color: #fff;
 }
-.symptoms-logo
+.card-image img
 {
-    width: 100%;
-}
-.symp-card:hover img
-{
-    transform: scale(1.2);
-}
+    padding: 10px;
+    background-color: #C5EAF0;
+    border-radius: 50%;
+} 
 
 /********************** start of detection page ************************************/
 .uploadDiv
@@ -116,4 +105,38 @@ input[type="file"] {
     background-color: #1e62b6 ;
     transition:  1.5;
 
+}
+/********************** Contact Us  ********************************/
+.con{
+    width:120vh ;
+    -webkit-box-shadow: 24px -9px 31px -7px rgba(46,74,117,1);
+    -moz-box-shadow: 24px -9px 31px -7px rgba(46,74,117,1);
+    box-shadow: 24px -9px 31px -7px rgba(46,74,117,1);
+}
+.card{
+    border-color: white;
+}
+.header{
+   text-align: center;
+   font-weight: 700;
+   font-style: italic;
+   font-size: 32px;
+   padding:20px 0 ;
+   color: #204473;
+}
+label{
+    font-size: 18px;
+    font-weight: 500;
+    color: #204473;
+}
+.btn1{
+    text-align: center;
+}
+.btn2 {
+    background-color: #204473;
+    color: white;
+}
+.card1{
+    border-width: 2px;
+    border-color: #85a5cc;
 }
