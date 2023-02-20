@@ -8,7 +8,7 @@
 
 <body>
   <!--#############Start of nav bar############3-->
-  <nav class="navbar navbar-expand-lg bg-white">
+  <nav class="navbar navbar-expand-lg bg-white" id="nv">
     <div class="container-fluid Nbar">
       <a class="navbar-brand fw-bold" href="#">MPox Detection</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -37,10 +37,10 @@
 
 
   <!--###########Start of first component##########-->
-  <div class="container text-center py-5  ">
-    <div class="row mb-auto py-5 ">
+  <div class="container text-center mb-2" id="hello">
+    <div class="row mb-auto">
       <div class="col-xl-6 col-lg-6 order-sm-last order-md-last order-lg-first col-md-12 mt-5">
-        <div class="info py-5">
+        <div class="info" id="inf">
           <h2 class="Main">Monkeypox Disease</h2>
           <p>Monkeypox is a rare disease caused by infection with the Monkeypox virus.
             Monkeypox virus is part of the same family of viruses as variola virus,
@@ -50,7 +50,7 @@
         </div>
       </div>
       <div class="col-xl-6 col-lg-6 order-sm-first  order-md-first order-lg-last col-md-12">
-        <div class="logo">
+        <div class="logo" id="im">
           <img src="imgs/1-removebg.png" class="card-img-top" alt="Picture describes Monkeypox disease effect">
         </div>
       </div>
@@ -60,12 +60,12 @@
 
 
   <!--###########Start of Symptoms##########-->
-  <div class="symptoms col-md-12 text-center py-5">
+  <div class="symptoms col-md-12 text-center" id="symp">
     <div class="symptoms-logo">
       <h2 class="Main mb-4">Symptoms...</h2>
     </div>
-    <div class="row row-cols-1 row-cols-md-4 py-5 g-6">
-      <div class="col  py-5 ">
+    <div class="row row-cols-1 row-cols-md-4 g-6">
+      <div class="col">
         <div class="card h-100 pt-2">
           <div class="card-image text-center">
             <img src="imgs/icons8-fever-100.png" class="card-img-top w-25" alt="...">
@@ -78,7 +78,7 @@
           </div>
         </div>
       </div>
-      <div class="col py-5">
+      <div class="col">
         <div class="card h-100 pt-2">
           <div class="card-image text-center">
             <img src="imgs/icons8-exhaustion-100.png" class="card-img-top w-25" alt="...">
@@ -91,7 +91,7 @@
           </div>
         </div>
       </div>
-      <div class="col py-5">
+      <div class="col">
         <div class="card h-100 pt-2">
           <div class="card-image text-center">
             <img src="imgs/icons8-rash-100.png" class="card-img-top w-25" alt="...">
@@ -105,7 +105,7 @@
           </div>
         </div>
       </div>
-      <div class="col py-5">
+      <div class="col">
         <div class="card h-100 pt-2">
           <div class="card-image text-center">
             <img src="imgs/icons8-headache-100.png" class="card-img-top w-25" alt="...">
@@ -126,12 +126,12 @@
 
   <!--###########Start of Preventions##########-->
 
-  <div class="preventions text-center col-md-12 mt-2 py-5">
+  <div class="preventions text-center col-md-12 mt-2" id="preventions">
     <div class="preventions-logo">
       <h2 class="Main mb-4">Preventions</h2>
     </div>
-    <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
-      <div class="col py-5">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
         <div class="card h-100 pt-2">
           <div class="card-image text-center">
             <img src="imgs/icons8-wash-hands-100.png" class="card-img-top w-25" alt="...">
@@ -144,7 +144,7 @@
           </div>
         </div>
       </div>
-      <div class="col py-5">
+      <div class="col">
         <div class="card h-100 pt-2">
           <div class="card-image text-center">
             <img src="imgs/icons8-vaccines-100.png" class="card-img-top w-25" alt="...">
@@ -157,7 +157,7 @@
           </div>
         </div>
       </div>
-      <div class="col py-5">
+      <div class="col">
         <div class="card h-100 pt-2">
           <div class="card-image text-center">
             <img src="imgs/icons8-no-touch-100.png" class="card-img-top w-25" alt="...">
@@ -174,7 +174,7 @@
       </div>
     </div>
   </div>
-  <script src="js/jquery-3.6.3.slim.min.js"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/bootstrap.bundle.js"></script>
   <script src="js/main.js"></script>
 </body>
