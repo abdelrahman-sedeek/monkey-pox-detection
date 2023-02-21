@@ -144,6 +144,21 @@ label{
     border-width: 2px;
     border-color: #85a5cc;
 }
+@media screen and (max-width:910px){
+    .con{
+        width:100vh;
+    }
+}
+@media screen and (max-width:760px){
+    .con{
+        width:80vh;
+    } 
+}
+@media screen and (max-width:610px){
+    .con{
+        width:60vh;
+    } 
+}
 /* </ contact us> */
 /* #### about us ####*/
 
