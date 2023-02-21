@@ -23,6 +23,11 @@
     display: flex;
     overflow: hidden;
 }
+#Hello,#inf, #symp,#nv,#im,#preventions
+{
+    display: none;
+}
+
 .container h2,.symptoms h3{
     text-align: left;
     font-weight: 700;
@@ -70,7 +75,6 @@
     background-color: #C5EAF0;
     border-radius: 50%;
 } 
-
 /********************** start of detection page ************************************/
 .uploadDiv
 {
@@ -140,3 +144,5 @@ label{
     border-width: 2px;
     border-color: #85a5cc;
 }
+
+
