@@ -144,5 +144,44 @@ label{
     border-width: 2px;
     border-color: #85a5cc;
 }
+/* </ contact us> */
+/* #### about us ####*/
 
+.about-us 
+{
+    /* background-image: url(../imgs/dna.png); */
+    background-color: #f1f1f1;
+}
+.about-us h1{
+    color: #204473;
+} 
+.about-us .content
+{
+    z-index: 99;
+    font-family: Segoe UI;
+    box-shadow:0px 2px 6px gray ;
+    overflow: hidden;
+    font-weight: 700;
+    font-size: large;
+}
+.about-us .content .text
+{
+    position: relative;   
 
+}
+
+.about-us .content img
+{
+    opacity: 0.3;
+    z-index: -1;
+    position: absolute;
+    left: -10%;
+    bottom: 0%;
+    transform: translate(-27%,40%);
+}
+.about-us .image img
+{
+    width: 69%;
+    /* margin-left:50px; */
+    align-items: center;
+}
