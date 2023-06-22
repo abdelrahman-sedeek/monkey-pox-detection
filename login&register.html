@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="form-structor">
+        <div class="signup">
+            <h2 class="form-title" id="signup"><span>or</span>Sign up</h2>
+            <form id="registerForm">
+                <div class="form-holder">
+                    <input type="text" id="nameInput" class="input" placeholder="Name" />
+                    <input type="email" id="emailInput" class="input" placeholder="Email" />
+                    <div class="passwordCont">
+                        <input type="password" id="passwordInput" class="input" placeholder="Password" onkeyup="validatePassword(this.value)"/>
+                        <i class="fa-solid fa-check" id="correct-pass"></i>
+                        <i class="fa-solid fa-xmark" id="wrong-pass"></i>
+                        <div id="message">
+                            <span class="dot"></span> password should be at least 8 characters
+                        </div>
+                    </div>
+                </div>
+                <button id="signupButton" class="submit-btn">Sign up</button>
+            </form>
+        </div>
+        <div class="login slide-up">
+            <div class="center">
+                <h2 class="form-title" id="login"><span>or</span>Log in</h2>
+                <form id="loginForm">
+                    <div class="form-holder">
+                        <input id="login-email" name="email" class="input" placeholder="Email" />
+                        <input id="login-password" name="password" type="password" class="input"
+                            placeholder="Password" />
+                        <label id="loginError" for=""></label>
+                    </div>
+                    <button type="submit" class="submit-btn">Log in</button>
+                </form>
+            </div>
+        </div>
+    </div>
+   
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="./js/login.js"></script>
+</body>
+
+</html>
