@@ -236,12 +236,29 @@
 	 visibility: visible;
 	 -webkit-transition: all 0.3s ease;
 }
+/* ...existing CSS rules... */
+
+/* Disabled state for the signup button */
+.form-structor .signup .submit-btn:disabled {
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: not-allowed;
+}
+
+/* Text color for the disabled signup button */
+.form-structor .signup .submit-btn:disabled,
+.form-structor .signup .submit-btn:disabled:hover {
+    color: rgba(256, 256, 256, 0.4);
+}
+
+/* ...existing CSS rules... */
+
  /**********Alert******/
- .passwordCont
+
+ .passwordCont,.emailCont
  {
 	 position: relative;
  }
- #correct-pass,#wrong-pass
+ #correct-pass,#wrong-pass,#wrong-email,#correct-email
  {
 	 position: absolute;
 	 top: 10px;
@@ -250,11 +267,11 @@
 	 display: none;
 	 
  }
- #correct-pass
+ #correct-pass,#correct-email
  {
 	 color: #50C878;
  }
- #wrong-pass
+ #wrong-pass,#wrong-email
  {
 	 color:rgb(196, 0, 0) ;
  }
@@ -265,7 +282,7 @@
     border-radius: 50%;
     display: inline-block;
 }
- #message
+ #passMessage,#emailMessage
  {
 	padding: 5px;
 	background-color:rgb(196, 0, 0) ;
