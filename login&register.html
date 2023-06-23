@@ -16,17 +16,24 @@
             <form id="registerForm">
                 <div class="form-holder">
                     <input type="text" id="nameInput" class="input" placeholder="Name" />
-                    <input type="email" id="emailInput" class="input" placeholder="Email" />
+                    <div class="emailCont">
+                        <input type="email" id="emailInput" class="input" placeholder="Email" />
+                        <i class="fa-solid fa-check" id="correct-email"></i>
+                        <i class="fa-solid fa-xmark" id="wrong-email"></i>
+                        <div id="emailMessage">
+                            <span class="dot"></span> ex: name@example.com
+                        </div>
+                    </div>
                     <div class="passwordCont">
-                        <input type="password" id="passwordInput" class="input" placeholder="Password" onkeyup="validatePassword(this.value)"/>
+                        <input type="password" id="passwordInput" class="input" placeholder="Password"/>
                         <i class="fa-solid fa-check" id="correct-pass"></i>
                         <i class="fa-solid fa-xmark" id="wrong-pass"></i>
-                        <div id="message">
+                        <div id="passMessage">
                             <span class="dot"></span> password should be at least 8 characters
                         </div>
                     </div>
                 </div>
-                <button id="signupButton" class="submit-btn">Sign up</button>
+                <button id="signupButton" class="submit-btn" disabled>Sign up</button>
             </form>
         </div>
         <div class="login slide-up">
